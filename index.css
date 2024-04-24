@@ -440,3 +440,7 @@ height: 450px;
     margin-right: 20px;
     padding-right: 20px;
   }
+
+  a:hover{
+    color: white
+  }
