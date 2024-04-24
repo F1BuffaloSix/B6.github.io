@@ -1,0 +1,318 @@
+/* Styles.css */
+@font-face {
+  font-family: Formula1-Regular;
+  src: url('./Fonts/F1/Formula1-Regular.otf');
+}
+
+@font-face {
+  font-family: Ethnocentric;
+  src: url('./Fonts/Ethnocentric/Ethnocentric-Regular.otf');
+}
+
+body {
+  background-color: rgb(28, 20, 20);
+  color: white;
+  font-family: Formula1-Regular;
+  font-style: normal;
+  font-size: medium;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+h1 {
+  font-family: Ethnocentric;
+  font-size: normal;
+  font-style: normal;
+  margin: 20px 0; /* Ajusta el margen superior e inferior del título */
+  padding-bottom: 10px;
+}
+
+h2,h3 {
+  font-family: Ethnocentric;
+  font-size: large;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px; /* Ajusta el margen inferior del título */
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: black;
+  font-weight: bold; /* Ajusta el grosor del texto durante el hover */
+}
+
+/* Custom.css */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px; /* Ajusta el espaciado entre columnas */
+}
+
+/* Newsletter Section Styles */
+.newsletter-card {
+  border-radius: 10px;
+  background-color: rgba(152,155,153); /* Ajusta la opacidad según sea necesario */
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Agregar una transición suave */
+}
+
+
+/* myBtn.js */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width: 40px; /* Ancho y alto iguales para formar un círculo */
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%; /* Hace que el botón sea circular */
+  padding: 0; /* Elimina el espacio interior */
+  fill: black; /* Color de la flecha en estado normal */
+  background-color: rgb(255, 255, 255);
+}
+
+#myBtn:hover {
+  background-color: rgb(0, 0, 0); /* Añade un fondo gris oscuro al hacer hover */
+}
+
+.arrow-icon:hover {
+  fill: rgb(255, 255, 255); /* Color de la flecha al hacer hover sobre el botón */
+}
+
+a {
+  color: white;
+  font-family: Formula1-Regular;
+  font-style: normal;
+  font-size: medium;
+}
+
+/* Estilos para alinear imágenes y texto */
+.body1, .body2, .body3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.imag {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.text {
+  flex: 2;
+}
+
+/* Asegurar que las imágenes sean responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+/* Media queries para dispositivos con un ancho máximo de 768px (tabletas y teléfonos móviles) */
+@media screen and (max-width: 768px) {
+  .body1, .body2, .body3 {
+      flex-direction: column; /* Cambiar la dirección de la flexbox a columna */
+  }
+  .imag, .text {
+      width: 100%; /* Ajustar el ancho de los elementos de imagen y texto al 100% */
+      margin: 0; /* Eliminar los márgenes para evitar espacios innecesarios */
+  }
+  .row {
+      flex-direction: column; /* Cambiar la dirección de la flexbox a columna */
+  }
+  .col-md-4 {
+      width: 100%; /* Ajustar el ancho de las columnas al 100% */
+      margin-bottom: 20px; /* Reducir el espacio entre las columnas */
+  }
+  /* Ajuste para cambiar el orden de texto e imagen */
+  .body1 .imag, .body2 .imag, .body3 .imag {
+      order: 2; /* Mover la imagen al segundo lugar */
+  }
+  .body1 .text, .body2 .text, .body3 .text {
+      order: 1; /* Mover el texto al primer lugar */
+  }
+}
+
+.footer{
+  background-color: rgba(56,52,52, 0.4);
+    padding: 70px 0;
+}
+.footer-col{
+  font-family: F1 Display;
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: (0,0,0,0.8);
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.social-links img {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  margin-bottom -3px;
+}
+
+.footlogo {
+  margin: 20px;
+  height: 200px;
+}
+
+.footer-col1  {
+  width: 45%;
+}
+
+.SponsorsDivider {
+  margin-bottom: 5%;
+}
+
+.wtsp {
+  margin-top: 2.5%;
+  display: grid;
+  font-family: "F1 Display";
+  font-size: 16px;
+  color: white;
+  justify-content: right;
+}
+
+.wtsp a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.titlesponsors {
+  margin-bottom: 4%;
+  font-family: "Ethnocentric";
+  color: white;
+  font-size:30px;
+}
+
+
+@font-face {
+  font-family: "Ethnocentric";
+  src: url(./assets/ethnocentric\ rg.otf);
+}
+
+@font-face {
+  font-family: "F1 Display";
+  src: url(./assets/Formula1\ Display\ Regular.ttf);
+}
+
+.titlepp {
+  margin-top: 5%;
+}
+.btn-primary{
+  margin: 0;
+}
