@@ -6,13 +6,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>News | Buffalo Six</title>
+<title>Home | Buffalo Six</title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 <link rel="shortcut icon" href="./Images/ICO.ico">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="newsletter.css">
+<link rel="stylesheet" href="/Pagina Web/styles.css">
+<link rel="stylesheet" href="newsletter.">
 <link href="newsletter.js">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
@@ -34,7 +35,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="spon.html">Sponsors</a>
+                      <a class="nav-link" href="#">Sponsors</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="ourTeam.html">About us</a>
@@ -53,7 +54,7 @@
       </div>
   </nav>
 
-  <h1>Newsletter</h1>
+  <h1 class="titlenews">Newsletter</h1>
   <div class="container">
       <div class="row">
 
@@ -61,8 +62,8 @@
               <div class="newsletter-card"> <!-- Add newsletter-card class here -->
                   <img src="./Images/13.jpg" class="card-img-top" alt="Rectangle Image">
                   <div class="card-body">
-                      <h5 class="card-title">F1 in schools 2023 world final</h5>
-                      <p class="card-text">Experience the excitement and intensity of the F1 in Schools 2023 World Final, where teams compete for the prestigious title. Dive into the action and follow the thrilling journey to victory.</p>
+                      <h5 class="card-title">News Title 1</h5>
+                      <p class="card-text">Mini summary of the news 1.</p>
                       <a href="#" class="btn btn-primary"><b>More</b></a>
                   </div>
               </div>
@@ -72,8 +73,8 @@
               <div class="newsletter-card"> <!-- Add newsletter-card class here -->
                   <img src="./Images/11.jpg" class="card-img-top" alt="Rectangle Image">
                   <div class="card-body">
-                      <h5 class="card-title">The F1 in Schools Experience</h5>
-                      <p class="card-text">Explore the intersection of engineering and innovation through the exhilarating competitions and projects of F1 in Schools.</p>
+                      <h5 class="card-title">News Title 2</h5>
+                      <p class="card-text">Mini summary of the news 2.</p>
                       <a href="#" class="btn btn-primary"><b>More</b></a>
                   </div>
               </div>
@@ -83,8 +84,8 @@
               <div class="newsletter-card"> <!-- Add newsletter-card class here -->
                   <img src="./Images/15.jpg" class="card-img-top" alt="Rectangle Image">
                   <div class="card-body">
-                      <h5 class="card-title">Racing Dreams, Engineering Realities</h5>
-                      <p class="card-text"> Witness the fusion of dreams and reality as students transform their passion for speed into tangible achievements on the track and in the lab.</p>
+                      <h5 class="card-title">News Title 3</h5>
+                      <p class="card-text">Mini summary of the news 3.</p>
                       <a href="#" class="btn btn-primary"><b>More</b></a>
                   </div>
               </div>
@@ -94,8 +95,8 @@
               <div class="newsletter-card"> <!-- Add newsletter-card class here -->
                   <img src="./Images/8.jpg" class="card-img-top" alt="Rectangle Image">
                   <div class="card-body">
-                      <h5 class="card-title">Shaping the Future, One Lap at a Time</h5>
-                      <p class="card-text">Join the revolution of young minds as they revolutionize the world of racing, engineering, and education with every lap they race.</p>
+                      <h5 class="card-title">News Title 4</h5>
+                      <p class="card-text">Mini summary of the news 4.</p>
                       <a href="#" class="btn btn-primary"><b>More</b></a>
                   </div>
               </div>
@@ -105,8 +106,8 @@
               <div class="newsletter-card"> <!-- Add newsletter-card class here -->
                   <img src="./Images/3.jpg" class="card-img-top" alt="Rectangle Image">
                   <div class="card-body">
-                      <h5 class="card-title"> Fueling Innovation, Inspiring Change</h5>
-                      <p class="card-text">Follow the trailblazers of tomorrow as they unleash their potential, fuel innovation, and inspire a new era of progress and possibility.</p>
+                      <h5 class="card-title">News Title 5</h5>
+                      <p class="card-text">Mini summary of the news 5.</p>
                       <a href="#" class="btn btn-primary"><b>More</b></a>
                   </div>
               </div>
@@ -116,40 +117,14 @@
               <div class="newsletter-card"> <!-- Add newsletter-card class here -->
                   <img src="./Images/6.jpg" class="card-img-top" alt="Rectangle Image">
                   <div class="card-body">
-                      <h5 class="card-title">Racing Towards Tomorrow</h5>
-                      <p class="card-text">Experience the adrenaline-fueled world of young innovators as they push the boundaries of engineering and design in high-speed competitions.</p>
+                      <h5 class="card-title">News Title 6</h5>
+                      <p class="card-text">Mini summary of the news 6.</p>
                       <a href="#" class="btn btn-primary"><b>More</b></a>
                   </div>
               </div>
           </div>
       </div>
   </div>
-
-  
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.59 15.41L12 10.83 7.41 15.41 6 14l6-6 6 6z"/>
-      </svg>
-    </button>    
-
-    <script>
-      const btnPrimaryList = document.querySelectorAll('.btn-primary');
-      
-      btnPrimaryList.forEach(btn => {
-        btn.addEventListener('mouseover', function() {
-          const newsletterCard = this.closest('.col-md-4').querySelector('.newsletter-card');
-          newsletterCard.style.backgroundColor = 'rgba(70,73,71)';
-          newsletterCard.style.color = 'white';
-        });
-    
-        btn.addEventListener('mouseout', function() {
-          const newsletterCard = this.closest('.col-md-4').querySelector('.newsletter-card');
-          newsletterCard.style.backgroundColor = 'rgba(152,155,153)';
-          newsletterCard.style.color = 'rgb(0, 0, 0)';
-        });
-      });
-    </script>
-
 
   
   <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -187,7 +162,7 @@
         <div class="footer-col">
           <h4>Wish to see more?</h4>
           <ul>
-            <li><a href="spon.html">Sponsors</a></li>
+            <li><a href="#">Sponsors</a></li>
             <li><a href="ourTeam.hmtl">About Us</a></li>
             <li><a href="what_is_F1_in_schools.html">F1 in Schools</a></li>
             <li><a href="Newsletter.html">Newsletter</a></li>
