@@ -20,8 +20,9 @@ html {
 body {
     background-color: #181717;
     margin: 0;
-    width: 100vw;
+    width: 98.6vw;
     height: 100vh;
+
 }
 
 .navbar {
@@ -321,9 +322,44 @@ height: 450px;
   ul{
       list-style: none;
   }
+  .SponsorsDivider {
+    margin-bottom: 5%;
+  }
+
+  .wtsp {
+    margin-top: 2.5%;
+    display: grid;
+    font-family: "F1 Display";
+    font-size: 16px;
+    color: white;
+    justify-content: right;
+  }
+  
+  .wtsp a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .titlesponsors {
+    margin-bottom: 4%;
+    font-family: "Ethnocentric";
+    color: white;
+    font-size:30px;
+  }
+
+  .img-fluid3{
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  a:hover{
+    color: white
+  }
+
   .footer{
-    background-color: rgba(56,52,52, 0.4);
-      padding: 70px 0;
+    width: 100%;
+    background-color: rgba(56, 52, 52, 0.4);
+    padding: 70px 0;
   }
   .footer-col{
     font-family: F1 Display;
@@ -409,38 +445,4 @@ height: 450px;
 
   .footer-col1  {
     width: 50%;
-  }
-
-  .SponsorsDivider {
-    margin-bottom: 5%;
-  }
-
-  .wtsp {
-    margin-top: 2.5%;
-    display: grid;
-    font-family: "F1 Display";
-    font-size: 16px;
-    color: white;
-    justify-content: right;
-  }
-  
-  .wtsp a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .titlesponsors {
-    margin-bottom: 4%;
-    font-family: "Ethnocentric";
-    color: white;
-    font-size:30px;
-  }
-
-  .img-fluid3{
-    margin-right: 20px;
-    padding-right: 20px;
-  }
-
-  a:hover{
-    color: white
   }

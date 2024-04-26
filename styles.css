@@ -15,19 +15,22 @@ body {
   font-family: Formula1-Regular;
   font-style: normal;
   font-size: medium;
-  padding-left: 25px;
-  padding-right: 25px;
   text-align: justify;
   padding-bottom: 10px;
   margin: 0;
 }
 
+.titleNL{
+  padding-top: 50px;
+}
 h1 {
   font-family: Ethnocentric;
   font-size: normal;
   font-style: normal;
   margin: 20px 0; /* Ajusta el margen superior e inferior del título */
   padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 h2,h3 {
@@ -141,6 +144,8 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .imag {
@@ -151,6 +156,8 @@ a {
 
 .text {
   flex: 2;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* Asegurar que las imágenes sean responsivas */
@@ -192,7 +199,7 @@ img {
 
 .footer{
   background-color: rgba(56,52,52, 0.4);
-    padding: 70px 0;
+  padding: 70px 0;
 }
 .footer-col{
   font-family: F1 Display;

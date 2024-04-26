@@ -14,15 +14,7 @@ function scrollFunction() {
 
 // Cuando el usuario hace clic en el botón, se desplaza suavemente hacia arriba
 function topFunction() {
-  const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
-  const scrollStep = Math.round(currentPosition / 10);
-
-  function smoothScroll() {
-    if (window.pageYOffset === 0) {
-      clearInterval(scrollInterval);
-    }
-    window.scrollBy(0, -scrollStep);
-  }
-
-  const scrollInterval = setInterval(smoothScroll, 15);
+  // Utiliza scrollIntoView() con el comportamiento de desplazamiento suave
+  document.documentElement.scrollIntoView({ behavior: 'smooth' });
 }
+

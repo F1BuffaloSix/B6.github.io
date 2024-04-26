@@ -423,3 +423,24 @@ body {
     color: white;
     font-size:30px;
   }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    width: 40px; /* Ancho y alto iguales para formar un círculo */
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    padding: 0; /* Elimina el espacio interior */
+    fill: black; /* Color de la flecha en estado normal */
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(0, 0, 0); /* Añade un fondo gris oscuro al hacer hover */
+  }
