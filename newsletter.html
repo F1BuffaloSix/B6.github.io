@@ -136,21 +136,41 @@
 
 
       <script>
-        const btnPrimaryList = document.querySelectorAll('.btn-primary');
-        
-        btnPrimaryList.forEach(btn => {
-          btn.addEventListener('mouseover', function() {
-            const newsletterCard = this.closest('.col-md-4').querySelector('.newsletter-card');
-            newsletterCard.style.backgroundColor = 'rgba(70,73,71)';
-            newsletterCard.style.color = 'white';
-          });
-      
-          btn.addEventListener('mouseout', function() {
-            const newsletterCard = this.closest('.col-md-4').querySelector('.newsletter-card');
-            newsletterCard.style.backgroundColor = 'rgba(152,155,153)';
-            newsletterCard.style.color = 'rgb(0, 0, 0)';
-          });
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  const btnPrimaryList = document.querySelectorAll('.btn-primary');
+
+  btnPrimaryList.forEach(btn => {
+    btn.addEventListener('mouseover', function() {
+      const newsletterCard = this.closest('.newsletter-card');
+      newsletterCard.style.backgroundColor = 'rgba(70, 73, 71)';
+      newsletterCard.style.color = 'white';
+    });
+
+    btn.addEventListener('mouseout', function() {
+      const newsletterCard = this.closest('.newsletter-card');
+      newsletterCard.style.backgroundColor = 'rgba(152, 155, 153)';
+      newsletterCard.style.color = 'rgb(0, 0, 0)';
+    });
+    // Opción cuando hagas click
+    btn.addEventListener('mousedown', function() {
+      const newsletterCard = this.closest('.newsletter-card');
+      newsletterCard.style.backgroundColor = 'white';
+      newsletterCard.style.color = 'black';
+      this.style.backgroundColor = 'black'; 
+      this.style.color = 'white';
+    });
+
+    btn.addEventListener('mouseup', function() {
+      const newsletterCard = this.closest('.newsletter-card');
+      newsletterCard.style.backgroundColor = 'rgba(152, 155, 153)';
+      newsletterCard.style.color = 'rgb(0, 0, 0)';
+      this.style.backgroundColor = '';
+      this.style.color = '';
+    });
+  });
+});
+
+
       </script>
 
   <script src="index.js"></script>

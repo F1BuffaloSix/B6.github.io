@@ -200,15 +200,21 @@ table {
 
 .Heimendinger {
     width: 350px;
+    height: auto;
     border: 5px solid #000;
     margin-left: 180px;
     margin-top: 320px;
     float: left;
 }
 
+#AlexisPht{
+    width: 342px;
+    height: auto;
+}
+
 .HeimeTitulo {
     float:left;
-    margin-left: 55px;
+    margin-left: 15px;
     padding: 85px;
     margin-top: 220px;
     font-family: "Ethnocentric";
@@ -224,6 +230,7 @@ table {
     font-family: "F1 Display";
     font-size: 29px;
     text-align: center;
+    padding-left: 55px;
     color: #ffffff;
 }
 #myBtn {
