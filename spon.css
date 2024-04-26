@@ -672,3 +672,22 @@ table {
 #myBtn:hover {
   background-color: rgb(0, 0, 0); /* Añade un fondo gris oscuro al hacer hover */
 }
+
+.btn-primary {
+  background-color: #000000;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0px solid black;
+  transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 0px solid black;
+  font-weight: bold; /* Ajusta el grosor del texto durante el hover */
+}

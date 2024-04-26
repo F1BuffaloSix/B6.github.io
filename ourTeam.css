@@ -256,4 +256,6 @@ table {
   
   #myBtn:hover {
     background-color: rgb(0, 0, 0); /* Añade un fondo gris oscuro al hacer hover */
+    fill: white; /* Color de la flecha en estado normal */
   }
+  
