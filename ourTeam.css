@@ -203,7 +203,7 @@ table {
     height: auto;
     border: 5px solid #000;
     margin-left: 180px;
-    margin-top: 320px;
+    margin-top: 100px;
     float: left;
 }
 
@@ -216,7 +216,7 @@ table {
     float:left;
     margin-left: 15px;
     padding: 85px;
-    margin-top: 220px;
+    margin-top: 30px;
     font-family: "Ethnocentric";
     font-size: 39px;
     text-align: center;
@@ -224,7 +224,7 @@ table {
 }
 
 .AlexisC{
-    padding-top: 35px;
+    padding-top: 10px;
 }
 
 .HeimeTexto {
@@ -259,3 +259,23 @@ table {
     fill: white; /* Color de la flecha en estado normal */
   }
   
+  .txtM-V{
+    margin-top: -180px;
+    float:left;
+    padding-top: 130px;
+    font-family: "F1 Display";
+    font-size: 26px;
+    text-align: center;
+    padding-left: 40px;
+    color: #ffffff;
+    text-align: justify;
+    padding-right: 40px;
+  }
+
+  h3{
+    font-family: "Ethnocentric";
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+  }
