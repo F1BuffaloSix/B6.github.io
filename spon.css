@@ -651,6 +651,10 @@ table {
     color: #ffffff;
 }
 
+.sp4ce {
+    padding-top: 50px;
+}
+
 /* myBtn.js */
 #myBtn {
   display: none;
