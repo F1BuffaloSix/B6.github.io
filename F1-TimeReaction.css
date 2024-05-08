@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evitar scroll horizontal en dispositivos móviles */
 }
 
 body {
@@ -21,13 +22,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    overflow-y: auto; /* Permitir scroll vertical en dispositivos móviles */
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
     body {
-        height: auto;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        height: auto; /* Eliminar altura fija en modo horizontal */
     }
 }
 
@@ -63,14 +63,14 @@ body {
     margin: 0 2px;
     position: relative;
     flex: 1;
+    overflow-y: scroll; /* Permitir scroll vertical en luces de inicio */
+    overflow-x: hidden; /* Evitar scroll horizontal en luces de inicio */
 }
 
 @media (min-width: 435px) {
     .light-strip {
         margin: 0 4px;
         border-radius: 11px;
-        overflow-y: scroll;
-        overflow-x: hidden;
     }
 }
 
