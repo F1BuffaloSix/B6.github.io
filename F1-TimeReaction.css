@@ -2,16 +2,13 @@
 @font-face {
     font-family: Formula1-Regular;
     src: url('./Fonts/F1/Formula1-Regular.otf');
-}
-
-html, body {
+  }
+  
+  html {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Evitar scroll horizontal en dispositivos móviles */
-}
-
-body {
+  }
+  
+  body {
     font-family: sans-serif;
     color: white;
     background-color: rgb(28, 20, 20);
@@ -22,42 +19,44 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow-y: auto; /* Permitir scroll vertical en dispositivos móviles */
-}
-
-@media screen and (max-width: 900px) and (orientation: landscape) {
+    overflow-x: hidden; /* Evitar scroll horizontal en dispositivos móviles */
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 600px) and (orientation: landscape) {
     body {
-        height: auto; /* Eliminar altura fija en modo horizontal */
+      height: auto; /* Eliminar altura fija en modo horizontal */
     }
-}
-
-/* Estilos de las luces de inicio */
-.f1-lights {
+  }
+  
+  /* Estilos de las luces de inicio */
+  .f1-lights {
     padding-top: 4%;
     display: flex;
     position: relative;
     width: 100%;
     max-width: 600px;
     margin: 20px auto 20px;
-}
-
-.light {
+  }
+  
+  .light {
     border-radius: 100%;
     background: rgb(28, 20, 20);
     margin: 8px;
-}
-
-.light::before {
+  }
+  
+  .light::before {
     content: '';
     display: block;
     padding-top: 100%;
-}
-
-.light-strip.on .light:nth-child(1n+3) {
+  }
+  
+  .light-strip.on .light:nth-child(1n+3) {
     background: red;
-}
-
-.light-strip {
+  }
+  
+  .light-strip {
     background: rgb(255, 255, 255);
     border-radius: 9px;
     margin: 0 2px;
@@ -65,16 +64,16 @@ body {
     flex: 1;
     overflow-y: scroll; /* Permitir scroll vertical en luces de inicio */
     overflow-x: hidden; /* Evitar scroll horizontal en luces de inicio */
-}
-
-@media (min-width: 435px) {
+  }
+  
+  @media (min-width: 435px) {
     .light-strip {
-        margin: 0 4px;
-        border-radius: 11px;
+      margin: 0 4px;
+      border-radius: 11px;
     }
-}
-
-.back-board {
+  }
+  
+  .back-board {
     position: absolute;
     left: 5px;
     right: 5px;
@@ -82,10 +81,10 @@ body {
     height: 5%;
     background: rgb(255, 255, 255);
     transform: translateY(-50%);
-}
-
-/* Estilos del temporizador y la palabra "Jump Start" */
-.time {
+  }
+  
+  /* Estilos del temporizador y la palabra "Jump Start" */
+  .time {
     font-size: 90px;
     font-size: 12vw;
     line-height: 1;
@@ -93,34 +92,42 @@ body {
     text-transform: uppercase;
     will-change: transform;
     text-align: center;
-}
-
-.jump-start {
+  }
+  
+  .jump-start {
     font-size: 90px;
     font-size: 12vw;
     margin-bottom: 10px;
     text-align: center;
-}
-
-.best, .credit{
+  }
+  
+  .best,
+  .credit {
     font-size: 18px;
     text-align: center;
     line-height: 1.4;
-}
-
-a:link, a {
+  }
+  
+  a:link,
+  a {
     text-decoration: none;
     color: rgba(152, 155, 153);
-}
-
-.credit:hover {
+  }
+  
+  .credit:hover {
     color: white;
-}
-
-.results {
+  }
+  
+  .results {
     margin-top: -30px;
-}
-
-.info, .results {
-    transform: scale(0.90);
-}
+  }
+  
+  .main-content {
+    flex: 1;
+    overflow-y: auto; /* Permitir scroll vertical en el contenido principal */
+  }
+  
+  .info,
+  .results {
+    transform: scale(0.9);
+  }
