@@ -27,19 +27,23 @@ function start() {
   for (const light of lights) {
     light.classList.remove('on');
   }
+
   time.textContent = '00.000';
   time.classList.remove('anim');
+
   lightsOutTime = 0;
   let lightsOn = 0;
   const lightsStart = performance.now();
 
   function frame(now) {
     const toLight = Math.floor((now - lightsStart) / 1000) + 1;
+
     if (toLight > lightsOn) {
       for (const light of lights.slice(0, toLight)) {
         light.classList.add('on');
       }
     }
+
     if (toLight < 5) {
       raf = requestAnimationFrame(frame);
     } else {
@@ -52,12 +56,14 @@ function start() {
       }, delay);
     }
   }
+
   raf = requestAnimationFrame(frame);
 }
 
 function end(timeStamp) {
   cancelAnimationFrame(raf);
   clearTimeout(timeout);
+
   if (!lightsOutTime) {
     time.textContent = "Jump start!";
     time.classList.add('anim');
@@ -65,29 +71,29 @@ function end(timeStamp) {
   } else {
     const thisTime = timeStamp - lightsOutTime;
     time.textContent = formatTime(thisTime);
+
     if (thisTime < bestTime) {
       bestTime = thisTime;
       best.textContent = time.textContent;
       localStorage.setItem('best', thisTime);
+
       if (typeof confetti !== 'undefined') {
-        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
       }
     }
+
     time.classList.add('anim');
   }
 }
 
 function tap(event) {
-  // Verificar si el evento es un gesto de desplazamiento
-  if (event.type === 'touchstart' && event.touches.length > 1) {
-    return; // Ignorar el evento si es un gesto de desplazamiento
-  }
-
   let timeStamp = performance.now();
 
-  // Verificar si el evento proviene de un enlace
   if (!started && event.target && event.target.closest && event.target.closest('a')) return;
-
   event.preventDefault();
 
   if (started) {
@@ -99,10 +105,13 @@ function tap(event) {
   }
 }
 
-addEventListener('touchstart', tap, { passive: false });
+// Ajustar el event listener de 'touchstart' para permitir el desplazamiento
+addEventListener('touchstart', tap, { passive: true });
+
 addEventListener('mousedown', event => {
   if (event.button === 0) tap(event);
 }, { passive: false });
+
 addEventListener('keydown', event => {
   if (event.key == ' ') tap(event);
 }, { passive: false });
