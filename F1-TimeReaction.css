@@ -22,7 +22,6 @@ body {
     justify-content: space-between;
     align-items: center;
     touch-action: manipulation;
-
 }
 
 
@@ -118,3 +117,15 @@ a:link, a {
 .info{
     margin-top: -35px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .info{
+        padding-top: 45px;
+        padding-bottom: 80px; 
+        margin-bottom: 100px;
+    }
+    .info, .results {
+        transform: scale(0.9);
+    }
+  }
