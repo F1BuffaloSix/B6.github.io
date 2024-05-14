@@ -15,13 +15,15 @@ html {
 @font-face {
     font-family: "F1 Display";
     src: url(./assets/Formula1\ Display\ Regular.ttf);
-}
+  }
 
 body {
     background-color: #181717;
     margin: 0;
     width: 100vw;
     height: 100vh;
+    font-family: 'F1 Display';
+
 }
 
 .titlef1sc {

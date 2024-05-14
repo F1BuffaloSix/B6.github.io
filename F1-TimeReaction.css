@@ -2,7 +2,7 @@
 @font-face {
     font-family: Formula1-Regular;
     src: url('./Fonts/F1/Formula1-Regular.otf');
-}
+  }
 
 html, body {
     height: 100%;
@@ -22,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     touch-action: manipulation;
+    font-family: 'Formula1-Regular';
 }
 
 

@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Ethnocentric";
     src: url(./assets/ethnocentric\ rg.otf);
@@ -8,9 +6,11 @@
 @font-face {
     font-family: "F1 Display";
     src: url(./assets/Formula1\ Display\ Regular.ttf);
+  }
+
+body{
+    font-family: 'F1 Display';
 }
-
-
 
 .mordekaiser {
     padding-top: 1000px;
