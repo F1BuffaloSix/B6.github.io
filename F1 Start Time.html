@@ -13,17 +13,20 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="loading.js">
-</head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G354RP5YHM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>
+    // Deshabilitar clic derecho
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
 
-  gtag('config', 'G-G354RP5YHM');
-</script>
+    // Deshabilitar Ctrl + I y Ctrl + U
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey && (e.key === 'i' || e.key === 'I' || e.key === 'u' || e.key === 'U')) || e.key === ' ') {
+        e.preventDefault();
+      }
+    });
+  </script>
 
 <body>
   <!-- Encabezado (Header) -->
