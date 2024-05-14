@@ -467,6 +467,9 @@ a:hover {
   .col-12{
     margin-top: -40px;
   }
+
+  .image-container {
+    display: none;}
 }
 
 /* Ajustes adicionales para mejorar el tamaño de las imágenes */
@@ -476,3 +479,43 @@ a:hover {
     margin: 0 4px; /* Reducir el margen entre las imágenes */
   }
 }
+/* Ajustes para dispositivos horizontales */
+@media only screen and (max-width: 991px) {
+  .content-container1 {
+      flex-direction: column; /* Cambiar la dirección de la distribución de contenido */
+      align-items: center; /* Alinear elementos al centro */
+  }
+
+  .text-container1 {
+      width: 100%; /* Ancho completo */
+      margin-top: 20px; /* Ajustar el margen superior */
+  }
+
+  .image-container {
+      width: 100%; /* Ancho completo */
+      margin-top: 20px; /* Ajustar el margen superior */
+  }
+
+  .image-container img {
+      width: 100%; /* Ancho completo */
+  }
+
+  .indicator {
+      margin-top: 20px; /* Ajustar el margen superior */
+  }
+  /* Eliminar el carrusel */
+.image-container {
+  display: none;
+}
+
+.SponsorsDivider{
+  margin-top: -180px;
+}
+.titlesponsors{
+  text-align: left;
+  padding-left: 80px;
+
+}
+}
+
+
