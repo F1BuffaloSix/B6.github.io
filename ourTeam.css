@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "Ethnocentric";
     src: url(./assets/ethnocentric\ rg.otf);
@@ -6,14 +8,12 @@
 @font-face {
     font-family: "F1 Display";
     src: url(./assets/Formula1\ Display\ Regular.ttf);
-  }
-
-body{
-    font-family: 'F1 Display';
 }
 
+
+
 .mordekaiser {
-    padding-top: 1000px;
+    padding-top: 1430px;
 }
 
 .swain {
@@ -210,13 +210,32 @@ table {
 #AlexisPht{
     width: 342px;
     height: auto;
+    object-fit: cover;
 }
+
+#KalidPht{
+    width: 342px;
+    height: 342px;
+    object-fit: cover;
+}
+
 
 .HeimeTitulo {
     float:left;
     margin-left: 15px;
     padding: 85px;
-    margin-top: 30px;
+    margin-top: -30px;
+    font-family: "Ethnocentric";
+    font-size: 39px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.HeimeTitulo2 {
+    float:left;
+    margin-left: 680px;
+    margin-top: -220px;
+    padding-top: -300px;
     font-family: "Ethnocentric";
     font-size: 39px;
     text-align: center;
@@ -228,15 +247,16 @@ table {
 }
 
 .HeimeTexto {
-    margin-top: -180px;
+    margin-top: -140px;
     float:left;
     padding: 100px;
     font-family: "F1 Display";
     font-size: 29px;
     text-align: center;
-    padding-left: 55px;
+    padding-left: 340px;
     color: #ffffff;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -260,7 +280,7 @@ table {
   }
   
   .txtM-V{
-    margin-top: -180px;
+    margin-top: -200px;
     float:left;
     padding-top: 130px;
     font-family: "F1 Display";
