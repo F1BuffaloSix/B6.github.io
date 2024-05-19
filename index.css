@@ -376,7 +376,7 @@ a:hover {
 }
 
 /* Agregar reglas de medios para dispositivos móviles y tabletas */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   /* Main Content */
   .content-container1 {
     display: flex;
@@ -518,3 +518,18 @@ a:hover {
 }
 
 
+@media only screen and (max-width: 768px) {
+  /* Estilos para el footer */
+  .footer {
+    padding: 50px 0; /* Reducir el padding superior e inferior */
+    text-align: center; /* Alinear el texto al centro */
+    display: flex; /* Usar flexbox */
+    justify-content: flex-end; /* Alinear los elementos al final del contenedor */
+    flex-direction: row-reverse; /* Invertir la dirección de los elementos */
+  }
+
+  .footer-col {
+    width: 33.33%; /* Ancho de cada columna */
+    text-align: center; /* Alinear el texto al centro */
+  }
+}
