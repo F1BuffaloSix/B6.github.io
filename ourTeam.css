@@ -1,5 +1,4 @@
-
-
+/* styles.css */
 @font-face {
     font-family: "Ethnocentric";
     src: url(./assets/ethnocentric\ rg.otf);
@@ -10,14 +9,18 @@
     src: url(./assets/Formula1\ Display\ Regular.ttf);
 }
 
-
-
-.mordekaiser {
-    padding-top: 1430px;
+body {
+    font-family: "F1 Display", sans-serif;
+    color: #ffffff;
+    background-color: #000000;
 }
 
-.swain {
-    padding-top: 200px;
+.navbar-brand .logotxt {
+    font-family: "Ethnocentric";
+}
+
+.navbar-nav .nav-link {
+    font-family: "Ethnocentric";
 }
 
 .t1tle {
@@ -26,235 +29,29 @@
     text-align: center;
     font-size: 104px;
     padding-bottom: 100px;
-    color: #ffffff;
 }
-
-.t2tle {
-    padding-top: 10%;
-    font-family: "Ethnocentric";
-    text-align: center;
-    font-size: 70px;
-    padding-bottom: 100px;
-    color: #ffffff;
-}
-
-
-table {
-    border-collapse: collapse;
-  }
-  
-  td {
-    padding: 10px;
-    text-align: center;
-  }
-
-  td img {
-    width: 460px; /* Adjust the width for the first row */
-    height: 320px; /* Adjust the height for the first row */
-  }
-  
-  /* Decrease the size of images in the second row */
-  tr:nth-child(2) td img {
-    width: 340px; /* Adjust the width for the second row */
-    height: 200px; /* Adjust the height for the second row */
-  }
-  
-.ups {
-    padding-left: 20%;
-}
-
-  /* Decrease the size of images in the third row */
-  tr:nth-child(3) td img {
-    padding-top: 30px;
-    width: 240px; /* Adjust the width for the third row */
-    height: 100px; /* Adjust the height for the third row */
-  }
-
-
 
 .carousel-inner img {
     margin: auto;
-  }
+}
 
-
-.Iñaki {
+.Iñaki, .Oscar, .Miguel, .Adrian, .Javier, .Pato {
     width: auto;
     height: 320px;
     display: block;
     margin: auto;
 }
 
-.IñakiTitulo {
-    font-family: "Ethnocentric";
-    text-align: center;
+.IñakiTitulo, .OscarTitulo, .MiguelTitulo, .AdrianTitulo, .JavierTitulo, .PatoTitulo {
     font-size: 175%;
-    color: #ffffff;
+    text-align: center;
+    font-family: "Ethnocentric";
+
 }
 
-.IñakiTexto {
+.IñakiTexto, .OscarTexto, .MiguelTexto, .AdrianTexto, .JavierTexto, .PatoTexto {
     font-family: "Ethnocentric";
     text-align: center;
-    color: #ffffff;
-}
-
-.Javier {
-    width: 240px;
-    height: 320px;
-    display: block;
-    margin: auto;
-}
-
-.JavierTitulo {
-    font-family: "Ethnocentric";
-    text-align: center;
-    font-size: 175%;
-    color: #ffffff;
-}
-
-.JavierTexto {
-    font-family: "Ethnocentric";
-    text-align: center;
-    color: #ffffff;
-}
-
-.Adrian {
-    width: 240px;
-    height: 320px;
-    display: block;
-    margin: auto;
-}
-
-.AdrianTitulo {
-    font-family: "Ethnocentric";
-    text-align: center;
-    font-size: 175%;
-    color: #ffffff;
-}
-
-.AdrianTexto {
-    font-family: "Ethnocentric";
-    text-align: center;
-    color: #ffffff;
-}
-
-.Miguel {
-    width: 240px;
-    height: 320px;
-    display: block;
-    margin: auto;
-}
-
-.MiguelTitulo {
-    font-family: "Ethnocentric";
-    text-align: center;
-    font-size: 175%;
-    color: #ffffff;
-}
-
-.MiguelTexto {
-    font-family: "Ethnocentric";
-    text-align: center;
-    color: #ffffff;
-}
-
-.Oscar {
-    width: 240px;
-    height: 320px;
-    display: block;
-    margin: auto;
-}
-
-.OscarTitulo {
-    font-family: "Ethnocentric";
-    text-align: center;
-    font-size: 175%;
-    color: #ffffff;
-}
-
-.OscarTexto {
-    font-family: "Ethnocentric";
-    text-align: center;
-    color: #ffffff;
-}
-
-.Pato {
-    width: 240px;
-    height: 320px;
-    display: block;
-    margin: auto;
-}
-
-.PatoTitulo {
-    font-family: "Ethnocentric";
-    text-align: center;
-    font-size: 175%;
-    color: #ffffff;
-}
-
-.PatoTexto {
-    font-family: "Ethnocentric";
-    text-align: center;
-    color: #ffffff;
-    
-}
-
-.Heimendinger {
-    width: 350px;
-    height: auto;
-    border: 5px solid #000;
-    margin-left: 180px;
-    margin-top: 100px;
-    float: left;
-}
-
-#AlexisPht{
-    width: 342px;
-    height: auto;
-    object-fit: cover;
-}
-
-#KalidPht{
-    width: 342px;
-    height: 342px;
-    object-fit: cover;
-}
-
-
-.HeimeTitulo {
-    float:left;
-    margin-left: 15px;
-    padding: 85px;
-    margin-top: -30px;
-    font-family: "Ethnocentric";
-    font-size: 39px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.HeimeTitulo2 {
-    float:left;
-    margin-left: 680px;
-    margin-top: -220px;
-    padding-top: -300px;
-    font-family: "Ethnocentric";
-    font-size: 39px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.AlexisC{
-    padding-top: 10px;
-}
-
-.HeimeTexto {
-    margin-top: -140px;
-    float:left;
-    padding: 100px;
-    font-family: "F1 Display";
-    font-size: 29px;
-    text-align: center;
-    padding-left: 340px;
-    color: #ffffff;
 }
 
 #myBtn {
@@ -263,39 +60,142 @@ table {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    width: 40px; /* Ancho y alto iguales para formar un círculo */
+    width: 40px;
     height: 40px;
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 50%; /* Hace que el botón sea circular */
-    padding: 0; /* Elimina el espacio interior */
-    fill: black; /* Color de la flecha en estado normal */
+    border-radius: 50%;
+    fill: black;
     background-color: rgb(255, 255, 255);
+}
+
+#myBtn:hover {
+    background-color: rgb(0, 0, 0);
+    fill: white;
+}
+
+.footer{
+    background-color: rgba(56,52,52, 0.4);
+    padding: 70px 0;
   }
-  
-  #myBtn:hover {
-    background-color: rgb(0, 0, 0); /* Añade un fondo gris oscuro al hacer hover */
-    fill: white; /* Color de la flecha en estado normal */
+  .footer-col{
+    font-family: F1 Display;
+     width: 25%;
+     padding: 0 15px;
   }
-  
-  .txtM-V{
-    margin-top: -200px;
-    float:left;
-    padding-top: 130px;
-    font-family: "F1 Display";
-    font-size: 26px;
-    text-align: center;
-    padding-left: 40px;
-    color: #ffffff;
-    text-align: justify;
-    padding-right: 40px;
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      background-color: #ffffff;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: (0,0,0,0.8);
+      background-color: #ffffff;
   }
 
-  h3{
-    font-family: "Ethnocentric";
-    color: #ffffff;
+#KalidPht, #AlexisPht {
+    width: 342px;
+    height: 342px;
+    object-fit: cover;
+    border: black 5px solid;
+    background-position: 30% 50%; /* Ajusta la posición del centro de la imagen según sea necesario */
+    margin-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.Heimendinger {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Ajustamos el alineamiento vertical */
+    margin-bottom: 20px;
+}
+
+.advisor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 35px;
-    padding-top: 30px;
+    margin: 0 20px;
   }
+  
+  .circle-img {
+    width: 150px; /* Ancho del círculo */
+    height: 150px; /* Alto del círculo */
+    object-fit: cover;
+    background-size: 100%;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-top: 10px; /* Espacio entre el nombre y el círculo */
+  }
+
+.AlexisC {
+    text-align: center;
+}
+
+.TitleKalid, .TitleAlexis{
+    font-size: 30px;
+    font-family: "Ethnocentric";
+}
+
+.HeimeTexto{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-family: "Ethnocentric";
+}
+
+.txtM-V{
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
