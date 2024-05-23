@@ -1,4 +1,3 @@
-/* styles.css */
 @font-face {
     font-family: "Ethnocentric";
     src: url(./assets/ethnocentric\ rg.otf);
@@ -10,9 +9,10 @@
 }
 
 body {
-    font-family: "F1 Display", sans-serif;
+    font-family: "F1 Display";
     color: #ffffff;
     background-color: #000000;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .navbar-brand .logotxt {
@@ -46,7 +46,6 @@ body {
     font-size: 175%;
     text-align: center;
     font-family: "Ethnocentric";
-
 }
 
 .IñakiTexto, .OscarTexto, .MiguelTexto, .AdrianTexto, .JavierTexto, .PatoTexto {
@@ -75,73 +74,82 @@ body {
     fill: white;
 }
 
-.footer{
+.footer {
     background-color: rgba(56,52,52, 0.4);
     padding: 70px 0;
-  }
-  .footer-col{
+}
+
+.footer-col {
     font-family: F1 Display;
-     width: 25%;
-     padding: 0 15px;
-  }
-  .footer-col h4{
-      font-size: 18px;
-      color: #ffffff;
-      text-transform: capitalize;
-      margin-bottom: 35px;
-      font-weight: 500;
-      position: relative;
-  }
-  .footer-col h4::before{
-      content: '';
-      position: absolute;
-      left:0;
-      bottom: -10px;
-      background-color: #ffffff;
-      height: 2px;
-      box-sizing: border-box;
-      width: 50px;
-  }
-  .footer-col ul li:not(:last-child){
-      margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 300;
-      color: #bbbbbb;
-      display: block;
-      transition: all 0.3s ease;
-  }
-  .footer-col ul li a:hover{
-      color: #ffffff;
-      padding-left: 8px;
-  }
-  .footer-col .social-links a{
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: rgba(255,255,255,0.2);
-      margin:0 10px 10px 0;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      color: #ffffff;
-      transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover{
-      color: (0,0,0,0.8);
-      background-color: #ffffff;
-  }
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: (0,0,0,0.8);
+    background-color: #ffffff;
+}
 
 #KalidPht, #AlexisPht {
     width: 342px;
     height: 342px;
     object-fit: cover;
     border: black 5px solid;
-    background-position: 30% 50%; /* Ajusta la posición del centro de la imagen según sea necesario */
+    background-position: 30% 50%;
     margin-bottom: 10px;
     margin-top: 20px;
     justify-content: center;
@@ -150,7 +158,7 @@ body {
 .Heimendinger {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Ajustamos el alineamiento vertical */
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -160,42 +168,258 @@ body {
     align-items: center;
     text-align: center;
     margin: 0 20px;
-  }
-  
-  .circle-img {
-    width: 150px; /* Ancho del círculo */
-    height: 150px; /* Alto del círculo */
+}
+
+.advisor2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.circle-img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     background-size: 100%;
     border: 5px solid black;
     border-radius: 50%;
-    margin-top: 10px; /* Espacio entre el nombre y el círculo */
-  }
+    margin-top: 10px;
+}
 
 .AlexisC {
     text-align: center;
 }
 
-.TitleKalid, .TitleAlexis{
+.TitleKalid, .TitleAlexis {
     font-size: 30px;
     font-family: "Ethnocentric";
 }
 
-.HeimeTexto{
+.HeimeTexto {
     font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
 }
 
-h3{
+h3 {
     font-family: "Ethnocentric";
 }
 
-.txtM-V{
+.txtM-V {
     text-align: justify;
     font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 30px;
 }
+
+.Mission {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.Vision {
+    width: 50%;
+}
+
+/* Media Queries for Mobile Phones (Portrait Orientation) */
+@media (max-width: 600px) and (orientation: portrait) {
+    .t1tle {
+        font-size: 48px;
+        padding-top: 20%;
+        padding-bottom: 50px;
+    }
+
+    .Iñaki, .Oscar, .Miguel, .Adrian, .Javier, .Pato {
+        height: 200px;
+    }
+
+    .IñakiTitulo, .OscarTitulo, .MiguelTitulo, .AdrianTitulo, .JavierTitulo, .PatoTitulo {
+        font-size: 125%;
+    }
+
+    .Heimendinger {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .advisor {
+        margin-bottom: 20px;
+    }
+
+    .advisor2 {
+        margin-bottom: 20px;
+    }
+
+    #KalidPht, #AlexisPht {
+        width: 150px;
+        height: 150px;
+    }
+
+    .TitleKalid, .TitleAlexis {
+        font-size: 24px;
+    }
+
+    .HeimeTexto, .txtM-V {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+    .txtM-V {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txtM-V > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-col ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-col .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /* Specific adjustments for "Mission" and "Vision" */
+    .txtM-V {
+        text-align: justify;
+    }
+
+    .txtM-V > div {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .txtM-V > div h3 {
+        font-size: 24px;
+    }
+
+    .txtM-V > div p {
+        font-size: 16px;
+    }
+
+    .Mission {
+        margin-right: 0px;
+    }
+}
+
+/* Media Queries for Mobile Phones (Landscape Orientation) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .t1tle {
+        font-size: 60px;
+        padding-top: 10%;
+        padding-bottom: 40px;
+    }
+
+    .Iñaki, .Oscar, .Miguel, .Adrian, .Javier, .Pato {
+        height: 250px;
+    }
+
+    .IñakiTitulo, .OscarTitulo, .MiguelTitulo, .AdrianTitulo, .JavierTitulo, .PatoTitulo {
+        font-size: 140%;
+    }
+
+    .Heimendinger {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .advisor {
+        margin: 10px;
+        flex: 1;
+        max-width: 150px;
+    }
+
+    .advisor2 {
+        margin: 10px;
+        flex: 1;
+        max-width: 150px;
+        margin-left: 80px;
+
+    }
+
+
+    #KalidPht, #AlexisPht {
+        width: 190px;
+        height: 190px;
+    }
+
+    .TitleKalid, .TitleAlexis {
+        font-size: 20px;
+    }
+
+    .HeimeTexto {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .txtM-V {
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+        text-align: justify;
+    }
+
+    .txtM-V > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .footer-col ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-col .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+

@@ -350,6 +350,7 @@ body {
       color: #bbbbbb;
       display: block;
       transition: all 0.3s ease;
+      text-align: left;
   }
   .footer-col ul li a:hover{
       color: #ffffff;
