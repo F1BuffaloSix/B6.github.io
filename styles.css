@@ -197,6 +197,12 @@ img {
   .body1 .text, .body2 .text, .body3 .text {
       order: 1; /* Mover el texto al primer lugar */
   }
+
+  .text {
+    flex: 2;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .footer{
@@ -320,4 +326,13 @@ img {
 }
 .btn-primary{
   margin: 0;
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  .text {
+    flex: 2;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
