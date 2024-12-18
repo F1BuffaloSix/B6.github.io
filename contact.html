@@ -2,22 +2,32 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Buffalo Six</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Images/ICO.ico">
 
-<title>Contact | Buffalo Six</title>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+  
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-<link rel="shortcut icon" href="./Images/ICO.ico">
-<link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="loading.css">
-<link rel="stylesheet" href="loading.js">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link href="myBtn.js">
+  <!-- Scripts -->
+  <script src="loading.js" defer></script>
+  <script src="myBtn.js" defer></script>
+</head>
 
-<!-- Google tag (gtag.js) -->
+<body>
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G354RP5YHM"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -27,87 +37,185 @@
   gtag('config', 'G-G354RP5YHM');
 </script>
 
-</head>
-
-<body>
-
-  <div class="loader-section">
+  <!-- Sección de carga (Loader) -->
+  <div class="loader-section" style="display: none;">
     <span class="loader"></span>
   </div>
 
+  <!-- Deshabilitar clic derecho y ciertos atajos -->
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey && ['i', 'I', 's', 'S', 'u', 'U'].includes(e.key))) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- Encabezado (Header) -->
   <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-              <img src="assets/logonobg.svg" alt="Logo">
-              <span class="logotxt">Buffalo Six</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="spon.html">Sponsors</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="ourTeam.html">About us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="what_is_F1_in_schools.html">F1 in Schools</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="newsletter.html">Newsletter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="F1 Start Time.html">Time Reaction</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          </ul>
-          </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logonobg.svg" alt="Logo">
+        <span class="logotxt">Buffalo Six</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="spon.html">Sponsors</a></li>
+          <li class="nav-item"><a class="nav-link" href="ourTeam.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="what_is_F1_in_schools.html">F1 in Schools</a></li>
+          <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+          <li class="nav-item"><a class="nav-link" href="F1 Start Time.html">Time Reaction</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
+    </div>
   </nav>
 
-  <div class="contact-form-container">
-    <div class="contact-us">
-    </div>
-    <div class="header">
-      <h1>Contact our Team</h1>
-      <h2 class="headersub">We are more than happy to help!</h2>
-    </div>
-    <div class="address">
-      <i class="fas fa-map-marker-alt"></i>
-      <h3>Av. Moctezuma 2390
-        Zapopan, Jalisco
-      </h3>
-    </div>
-    <div class="phone">
-      <i class=></i>
-      <h3>
-        33 3620 5338</h3>
-    </div>
-    <div class="email">
-      <i class="fas fa-envelope"></i>
-      <h3>f1buffalosix@
-        altamira.edu.mx</h3>
-    </div>
-    <div class="contact-form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScu1wf_VR1lQbP-YpvvJfYvOFHHP2xVeBhs26zso_EoGxy7Uw/viewform?embedded=true" width="500" height="300" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  <!-- Botón de ir arriba -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">
+    <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.59 15.41L12 10.83 7.41 15.41 6 14l6-6 6 6z"></path>
+    </svg>
+  </button>
+
+  <!-- Contenido principal -->
+  <div class="contact-us">
+    <div class="container">
+      <div class="contact-form-container">
+        <div class="header">
+          <h1>Contact Our Team</h1>
+          <p class="headersub">We are more than happy to help!</p>
+        </div>
+
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted) { hideLoader(); window.location='submit.html'; }"></iframe>
+
+        <form action="https://script.google.com/macros/s/AKfycby6tMqxKiJZxK5JEhFdVrAEAIaqHOoxbp1PHcxWANk6aFCAhNrahDxvyfaAb352mkC3/exec" 
+              name="contact-form" 
+              class="contact-form" 
+              id="contactForm" 
+              method="POST" 
+              target="hiddenConfirm" 
+              onsubmit="submitted=true; showLoader();">
+
+          <label for="contactReason">Why do you wish to get in touch with us?*</label>
+          <select class="form-select" id="contactReason" name="contactReason" required>
+            <option value="" selected disabled hidden>Please select an option</option>
+            <option value="I want to sponsor/collaborate with the team">I want to sponsor/collaborate with the team</option>
+            <option value="I want to learn more about F1 in Schools">I want to learn more about F1 in Schools</option>
+            <option value="I have a question for the team">I have a question for the team</option>
+            <option value="I want to contact a specific team member">I want to contact a specific team member</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <script>
+            function validateForm() {
+              var contactReason = document.getElementById("contactReason").value;
+          
+              // Verificar si no se seleccionó un miembro del equipo válido (valor vacío)
+              if (!contactReason) {
+                alert("Please select an option");
+                return false; // Evita que se envíe el formulario
+              }
+          
+              return true; // El formulario se puede enviar si la validación es correcta
+            }
+          </script>
+
+          <div id="teamMembers" class="dropdown-field hidden-field">
+            <label for="teamMember">Select Team Member*</label>
+            <select class="form-select" id="teamMember" name="teamMember">
+              <option value="" selected disabled hidden></option> <!-- Opción predeterminada deshabilitada -->
+              <option value="Iñaki Flores | Project Manager">Iñaki Flores | Project Manager</option>
+              <option value="Patricio Martinez | Finance Manager">Patricio Martinez | Finance Manager</option>
+              <option value="Javier Villanueva | Sponsorship and Marketing Manager">Javier Villanueva | Sponsorship and Marketing Manager</option>
+              <option value="Adrián Velázquez | Graphic Designer">Adrián Velázquez | Graphic Designer</option>
+              <option value="Oscar Hernández | Design Engineer">Oscar Hernández | Design Engineer</option>
+              <option value="Miguel Velázquez | Manufacturing Engineer">Miguel Velázquez | Manufacturing Engineer</option>
+            </select>
+          </div>
+
+          <script>
+            function validateForm() {
+              var teamMembers = document.getElementById("teamMembers").value;
+
+              // Verificar si el valor seleccionado es vacío
+              if (teamMembers === "") {
+                alert("Please select a valid team member.");
+                return false; // Evita que se envíe el formulario
+              }
+
+              return true; // El formulario se puede enviar si la validación es correcta
+            }
+          </script>
+
+
+          <div id="companyField" class="hidden-field">
+            <label for="company">Company Name*</label>
+            <input type="text" id="company" name="company" placeholder="Company Name">
+          </div>
+
+
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+
+
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+         
+         <script>
+            document.getElementById("email").addEventListener("input", function () {
+              this.value = this.value.replace(/[^a-zA-Z0-9@._%+-]/g, "");
+            });
+          </script>
+
+
+
+          <div id="phoneNumber" class="hidden-field">
+            <label for="Phone">Phone Number*</label>
+            <input type="tel" id="Phone" name="Phone" placeholder="+5233-3620-5338" title="Only numbers, +, and - are allowed. No spaces or letters.">
+
+            <!-- Validación con JavaScript para el teléfono -->
+            <script>
+              document.getElementById("Phone").addEventListener("input", function () {
+                // Permitir solo números, + y guiones
+                this.value = this.value.replace(/[^0-9+\-]/g, "");
+
+                // Validar longitud mínima de 10 números excluyendo los símbolos (+ y -)
+                const numericValue = this.value.replace(/[^0-9]/g, ""); // Solo números
+                if (numericValue.length < 10) {
+                  this.setCustomValidity("The phone number must contain at least 10 digits (including the area code).");
+                } else {
+                  this.setCustomValidity(""); // Eliminar el mensaje de error si es válido
+                }
+              });
+            </script>
+          </div>
+
+
+          <label for="Message">Message*</label>
+          <textarea id="Message" name="Message" rows="4" required></textarea>
+
+
+<!-- Nuevo Loader -->
+<div id="loadingOverlay" class="loading-overlay" style="display: none;">
+  <div class="spinner"></div>
+</div>
+
+          <button type="submit" id="submit" >Submit Form</button>
+        </form>
+      </div>
     </div>
   </div>
 
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.59 15.41L12 10.83 7.41 15.41 6 14l6-6 6 6z"/>
-    </svg>
-</button>    
-  </button>  <script src="myBtn.js"></script>
-
-
-  <script src="index.js"></script>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -121,7 +229,6 @@
             <li><a href="ourTeam.html">About Us</a></li>
             <li><a href="what_is_F1_in_schools.html">F1 in Schools</a></li>
             <li><a href="newsletter.html">Newsletter</a></li>
-            <li><a href="F1 Start Time.html">Time Reaction</a></li>
             <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
           </ul>
         </div>
@@ -129,20 +236,74 @@
           <h4>Contact</h4>
           <div class="social-links">
             <a href="https://www.instagram.com/f1buffalosix/"><img src="assets/IGLOGO.png" alt=""></a>
-            <a href="https://www.youtube.com/@f1buffalosix"><img src="assets/YTLOGO.png" alt=""></a>
+            <a href="https://www.tiktok.com/@f1buffalosix"><img src="assets/TTLOGO.png" alt=""></a>
             <a href="mailto:f1buffalosix@altamira.edu.mx"><img src="assets/EMLOGO.png" alt=""></a>
             <a href="https://wa.link/7kj7iz/"><img src="assets/WALOGO.png" alt=""></a>
           </div>
         </div>
       </div>
     </div>
- </footer>
- <script src="loading.js"></script>
+  </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts personalizados -->
+  <script src="index.js" defer></script>
+  <script src="loading.js" defer></script>
+  <script src="myBtn.js" defer></script>
+
+  <!-- Loader functions -->
+  <script>
+    var submitted = false;
+  
+    function showLoader() {
+      document.querySelector('.loading-overlay').style.display = 'flex';
+      document.getElementById('submit').disabled = true; // Deshabilitar el botón de enviar
+    }
+  
+    function hideLoader() {
+      document.querySelector('.loading-overlay').style.display = 'none';
+      document.getElementById('submit').disabled = false; // Habilitar el botón de enviar
+      
+    }
+  
+    // Manejar el evento onload del iframe
+    document.getElementById('hiddenConfirm').addEventListener('load', function () {
+      if (submitted) {
+        hideLoader();
+        window.location = 'submit.html'; // Redirigir después del envío exitoso
+      }
+    });
+  </script>
+  
+
+<script src="loading.js"></script>
+
+<script>
+  document.getElementById("contactReason").addEventListener("change", function () {
+    const teamMembers = document.getElementById("teamMembers");
+    const companyField = document.getElementById("companyField");
+    
+    if (this.value === "I want to contact a specific team member") {
+      teamMembers.classList.remove("hidden-field");
+      phoneNumber.classList.remove("hidden-field");
+
+    } else {
+      teamMembers.classList.add("hidden-field");
+      phoneNumber.classList.add("hidden-field");
+    }
+    
+    if (this.value === "I want to sponsor/collaborate with the team") {
+      companyField.classList.remove("hidden-field");
+      phoneNumber.classList.remove("hidden-field");
+
+    } else {
+      companyField.classList.add("hidden-field");
+    }
+
+  });
+</script>
 </body>
 
-
-
-<link rel="script" href="index.js">
-<link rel="stylesheet" href="index.css">
 </html>
