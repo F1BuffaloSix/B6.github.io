@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(28, 20, 20);
+  background-color: #181717;
   color: white;
   font-family: Formula1-Regular;
   font-style: normal;
@@ -268,7 +268,7 @@ img {
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 1024px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
@@ -278,13 +278,6 @@ img {
   .footer-col{
     width: 100%;
 }
-}
-
-.social-links img {
-  width: 18px;
-  height: 18px;
-  margin: 0;
-  margin-bottom: -3px;
 }
 
 .footlogo {
@@ -335,4 +328,15 @@ img {
     padding-left: 0px;
     padding-right: 0px;
   }
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  background-color: white;
+  border-color: white;
+}
+
+.social-links img {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 3px;
 }

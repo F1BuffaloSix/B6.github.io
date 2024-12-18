@@ -1,116 +1,119 @@
-
-
-html {
-    scroll-behavior: smooth;
-  }
-
-  #container{
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-
-@font-face {
-    font-family: "Ethnocentric";
-    src: url(./assets/ethnocentric\ rg.otf);
-}
-
-@font-face {
-    font-family: "F1 Display";
-    src: url(./assets/Formula1\ Display\ Regular.ttf);
-}
-
 body {
-    background-color: #181717;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    font-family: 'F1 Display';
-
+  background-color: #181717;
+  color: #181717;
+  font-family: 'F1 Display', sans-serif;
+  padding-top: 40px;
 }
-
-.navbar {
-    background-color: rgba(24, 23, 23, 0.85);
-    height: 55px;
-}
-
-.navbar {
-    transition: transform 0.5s ease; /* Transition for both appearance and disappearance */
-  }
-  
-  .navbar.hidden {
-    transform: translateY(-100%);
-  }
-  
-  .navbar.visible {
-    transform: translateY(0);
-  }
-
-.navbar-brand img {
-    height: 30px;
-    width: auto;
-    margin-right: 0px;
-    align-items: center;
-    margin-bottom: 6px;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-}
-
-.dropdown-menu {
-    background-color:#18171790;
-}
-
-.navbar-toggler-icon {
-    color: white;
-}
-
-.logotxt {
-    font-family: "Ethnocentric";
-    color: white;
-    font-size:22px;
-    align-items: center;
-}
-
-.nav-link {
-    font-family: "F1 Display";
-    font-size: 12px;
-    color: white;
-    margin-right: 25px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
-
-@font-face {
-    font-family: "Ethnocentric";
-    src: url(./assets/ethnocentric\ rg.otf);
-}
-
-@font-face {
-    font-family: "F1 Display";
-    src: url(./assets/Formula1\ Display\ Regular.ttf);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Pretty Stuff */
 
 .contact-form-container {
-  margin-top: 4%;
-  margin-bottom: 4%;
   background: #ffffff;
-  font-family: 'Lato', sans-serif;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px #181717;
+  max-width: 700px;
+  margin: 10px auto;
+  z-index: +1; /* Set a lower z-index for the rectangle */
 }
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+
+}
+
+.contact-form button:hover {
+  background-color: transparent;
+  border-style: solid;  color: black;
+  font-weight: bold;
+  border-width: 2px;
+  box-shadow: 0px 4px 15px #989B99;
+
+}
+
+
+
+.hidden-field {
+  display: none;
+}
+
+.header h1 {
+  font-family: "Ethnocentric", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.headersub {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 20px;
+  }
+
+  .contact-us {
+    padding: 20px;
+  }
+  .header h1 {
+    font-size: 24px;
+  }
+  .headersub {
+    font-size: 14px;
+  }
+}
+
+
+.g-recaptcha {
+  padding-top: 10px;
+}
+
+.g-recaptcha-container {
+  display: flex;
+  justify-content: center;
+}
+
 
 .contact-us {
   position: relative;
-  width: 250px;
   background: #9c9c9c;
   overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px #181717;
+  max-width: 700px;
+  margin: 30px auto;
+  z-index: 0; /* Set a lower z-index for the rectangle */
+  margin-bottom: 60px;
 }
 
 .contact-us:before {
@@ -122,6 +125,10 @@ body {
   width: 400px;
   background: #444b4b;
   transform: rotate(25deg);
+  overflow: hidden;
+  z-index: -1; /* Set a lower z-index for the rectangle */
+
+
 }
 
 .contact-us:after {
@@ -133,299 +140,44 @@ body {
   width: 400px;
   background: #242424;
   transform: rotate(-25deg);
+  overflow: hidden;
+  z-index: -1; /* Set a lower z-index for the rectangle */
+
 }
 
 
-.contact-header {
-  color: #242424;
-  font-family: Ethnocentric;
-  font-size: small;
-  position: absolute;
-  transform: rotate(-90deg);
-  top: 110px;
-  left: -70px;
-}
 
-.social-bar {
-  position: absolute;
-  bottom: 20px;
-  left: 75px;
-  z-index: 1;
-  width: 100px;
-}
 
-.social-bar ul {
-  list-style-type: none;
-}
 
-.social-bar ul li {
-  display: inline-block;
-  color: white;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  margin-right: -4px;
-  font-size: 1.2rem;
-}
 
-.header {
-  text-align: center;
-  padding: 20px 0;
-  color: #0c0c0c;
-  font-family: Ethnocentric;
-  font-size: medium;
-}
 
-.headersub {
-    color: #0c0c0c;
-    font-family: F1 Display;
-    font-size: small;
-  }
 
-.header h1 {
-  font-weight: normal;
-}
-
-.header h2 {
-  margin-top: 10px;
-  font-weight: 300;
-}
-
-.address,
-.email,
-.phone {
-  margin-top: -140px;
-  text-align: center;
-  padding: 0px 0;
-  color: #0c0c0c;
-  display: grid;
-  justify-items: center;
+/* Estilos del overlay para cubrir toda la pantalla */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #181717a8;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
-.address h3,
-.email h3,
-.phone h3 {
-  font-size: 1rem;
-  font-weight: 300;
+/* Estilo de la animación del spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
-.address i,
-.email i,
-.phone i {
-  color: #ffffff;
-  font-size: 1.7rem;
-  margin-bottom: 20px;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.contact-form {
-    display: grid;
-  justify-items: center;
-  align-items: center;
-}  
-
-/* Layout Stuff */
-
-body {
-  background: #0c0c0c;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-.contact-form-container {
-  width: 800px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr;
-  grid-template-areas: 
-    "contact-us header header header" 
-    "contact-us address phone email" 
-    "contact-us contact-form contact-form contact-form";
-}
-
-.contact-us {
-  grid-area: contact-us;
-}
-
-.header {
-  grid-area: header;
-}
-
-.address {
-  grid-area: address;
-}
-
-.phone {
-  grid-area: phone;
-}
-
-.email {
-  grid-area: email;
-}
-
-.contact-form {
-  grid-area: contact-form;
-}
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-  *{
-      margin:0;
-      padding:0;
-      box-sizing: border-box;
-  }
-  .container{
-      max-width: 1170px;
-      margin:auto;
-  }
-  .row{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  ul{
-      list-style: none;
-  }
-  .footer{
-    width: 100vw;
-    background-color: rgba(56,52,52, 0.4);
-      padding: 70px 0;
-  }
-  .footer-col{
-    font-family: F1 Display;
-     width: 25%;
-     padding: 0 15px;
-  }
-  .footer-col h4{
-      font-size: 18px;
-      color: #ffffff;
-      text-transform: capitalize;
-      margin-bottom: 35px;
-      font-weight: 500;
-      position: relative;
-  }
-  .footer-col h4::before{
-      content: '';
-      position: absolute;
-      left:0;
-      bottom: -10px;
-      background-color: #ffffff;
-      height: 2px;
-      box-sizing: border-box;
-      width: 50px;
-  }
-  .footer-col ul li:not(:last-child){
-      margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 300;
-      color: #bbbbbb;
-      display: block;
-      transition: all 0.3s ease;
-      text-align: left;
-  }
-  .footer-col ul li a:hover{
-      color: #ffffff;
-      padding-left: 8px;
-  }
-  .footer-col .social-links a{
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: rgba(255,255,255,0.2);
-      margin:0 10px 10px 0;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      color: #ffffff;
-      transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover{
-      color: (0,0,0,0.8);
-      background-color: #ffffff;
-  }
-  
-  /*responsive*/
-  @media(max-width: 767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
-  }
-  }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-  }
-  }
-
-  .social-links img {
-    width: 18px;
-    height: 18px;
-    margin: 0;
-    margin-bottom: 3px;
-  }
-  
-  .footlogo {
-    margin: 20px;
-    height: 200px;
-  }
-
-  .footer-col1  {
-    width: 50%;
-  }
-
-  .SponsorsDivider {
-    margin-bottom: 5%;
-  }
-
-  .wtsp {
-    margin-top: 2.5%;
-    display: grid;
-    font-family: "F1 Display";
-    font-size: 16px;
-    color: white;
-    justify-content: right;
-  }
-  
-  .wtsp a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .titlesponsors {
-    margin-bottom: 4%;
-    font-family: "Ethnocentric";
-    color: white;
-    font-size:30px;
-  }
-
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    width: 40px; /* Ancho y alto iguales para formar un círculo */
-    height: 40px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50%; /* Hace que el botón sea circular */
-    padding: 0; /* Elimina el espacio interior */
-    fill: black; /* Color de la flecha en estado normal */
-    background-color: rgb(255, 255, 255);
-  }
-  
-  #myBtn:hover {
-    background-color: rgb(0, 0, 0); /* Añade un fondo gris oscuro al hacer hover */
-    fill: white;
-  }

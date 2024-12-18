@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Reaction Time | Buffalo Six</title>
+  
   <link rel="shortcut icon" href="./Images/ICO.ico">
   <meta name="theme-color" content="#ffffff">
   <script defer src="f1-client.js"></script>
@@ -15,6 +16,7 @@
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="loading.js">
 
+
   <script>
     // Deshabilitar clic derecho
     document.addEventListener('contextmenu', function(e) {
@@ -23,7 +25,7 @@
 
     // Deshabilitar Ctrl + I y Ctrl + U
     document.addEventListener('keydown', function(e) {
-      if ((e.ctrlKey && (e.key === 'i' || e.key === 'I' || e.key === 'u' || e.key === 'U')) || e.key === ' ') {
+      if ((e.ctrlKey && (e.key === 'i' || e.key === 'I' || e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) || e.key === ' ') {
         e.preventDefault();
       }
     });
@@ -42,6 +44,8 @@
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
   <!-- Encabezado (Header) -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
@@ -79,38 +83,40 @@
 
   <!-- Contenido existente -->
   <div class= "info">
-    <div class="f1-lights">
-      <div class="back-board"></div>
-      <div class="light-strip">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-      </div>
-      <div class="light-strip">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-      </div>
-      <div class="light-strip">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-      </div>
-      <div class="light-strip">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-      </div>
-      <div class="light-strip">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-      </div>
+    <div class="game-overlay">
+    <div class="game-background">
+      <div class="f1-lights">
+        <div class="back-board"></div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          </div>
     </div>
     <p class="tap-text">Tap/click when you're ready to race, then tap again when the lights go out.</p>
     <div class="results">
@@ -118,7 +124,10 @@
       <div class="best">Your best: <span>00.000</span></div>
       <div class="credit">Credits to <a href="https://twitter.com/jaffathecake">@jaffathecake</a> | <a href="https://f1-start.glitch.me/">official site</a></div>
     </div>
+    </div>
   </div>
+</div>
+
 
   <!-- Pie de página (Footer) -->
   <footer class="footer">
@@ -142,7 +151,7 @@
           <h4>Contact</h4>
           <div class="social-links">
             <a href="https://www.instagram.com/f1buffalosix/"><img src="assets/IGLOGO.png" alt=""></a>
-            <a href="https://www.youtube.com/@f1buffalosix"><img src="assets/YTLOGO.png" alt=""></a>
+            <a href="https://www.tiktok.com/@f1buffalosix"><img src="assets/TTLOGO.png" alt=""></a>
             <a href="mailto:f1buffalosix@altamira.edu.mx"><img src="assets/EMLOGO.png" alt=""></a>
             <a href="https://wa.link/7kj7iz/"><img src="assets/WALOGO.png" alt=""></a>
           </div>
@@ -152,7 +161,37 @@
   </footer>
 
   <script src="index.js"></script>
-  <script src="loading.js"></script>
+  <script src="loading.js"></script>  
+ 
 
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    
+    // Función para detectar si es un dispositivo móvil o tablet
+    function isMobileOrTablet() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+            || window.innerWidth <= 1024;
+    }
+
+    // Solo aplicar el comportamiento de scroll si NO es móvil/tablet
+    if (!isMobileOrTablet()) {
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+            const lastScroll = window.scrollY;
+
+            if (currentScroll > lastScroll && currentScroll > 0) {
+                navbar.style.top = `-${navbar.offsetHeight}px`;
+            } else {
+                navbar.style.top = '0';
+            }
+        });
+    } else {
+        // En móviles y tablets, asegurar que el navbar siempre esté visible
+        navbar.style.top = '0';
+    }
+});
+  </script>
 </body>
 </html>
