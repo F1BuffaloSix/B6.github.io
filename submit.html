@@ -168,6 +168,15 @@ form.addEventListener('submit', e => {
    <script src="loading.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    if (document.referrer.indexOf("/contact.html") === -1) {
+      window.location.href = "../contact.html";
+    }
+  </script>
+  
+  
+
 </body>
 
 </html>
