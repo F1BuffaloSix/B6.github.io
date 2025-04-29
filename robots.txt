@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://f1buffalosix.github.io/B6.github.io/sitemap.xml
